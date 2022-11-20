@@ -1,0 +1,276 @@
+/* importing fonts */
+    /* mulish typeface */
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+        @import url('https: //api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&f[]=clash-grotesk@200,700,400,600,300,1,500&display=swap');
+
+/* default styles */
+:root{
+    /* colors */
+        /* neutral */
+        --black500: #0A0C10;
+
+        --white500: #F6F6F6;
+
+        --gray500: #DEDEDE;
+        --gray600: #BCBABA;
+        --gray700: #898989;
+        --gray800: #636262;
+        --gray900: #3C3C3C;
+
+        /* brand-colors */
+        --green-leaf: #014B1C;
+        --mint: #B4FECF;
+        --deep-sea: #091328;
+        --cherry: #FF185B;
+        --cream: #C19F85;
+
+    /* typefaces */
+        /* wide screen */
+        --page-header-widescreen-font-size: 2.8125rem;
+        --title-1-widescreen-font-size: 2.375rem;
+        --title-2-widescreen-font-size: 2rem;
+        --title-3-widescreen-font-size: 1.375rem;
+
+        --subheader-widescreen-font-size: 1.125rem;
+        --subtitle-widescreen-font-size: 1rem:
+
+        --body-large-widescreen-font-size: 1.125rem;
+        --body-normal-widescreen-font-size: 1rem;
+
+        --caption-1-widescreen-font-size: 0.9375rem;
+        --caption-2-widescreen-font-size: 0.875rem;
+
+        --footnote-widescreen-font-size: 0.75rem;
+
+        /* medium-small screen */
+        --page-header-medium-font-size: 2.375rem;
+        --title-1-medium-font-size: 2rem;
+        --title-2-medium-font-size: 1.6875rem;
+        --title-3-medium-font-size: 1.375rem;
+    
+        --subheader-medium-font-size: 1.1875rem;
+        --subtitle-medium-font-size: 1rem: 
+
+        --body-large-medium-font-size: 1.125rem;
+        --body-normal-medium-font-size: 1rem;
+    
+        --caption-1-medium-font-size: 0.9375rem;
+        --caption-2-medium-font-size: 0.875rem;
+    
+        --footnote-medium-font-size: 0.75rem;
+
+        /* fonts */
+        --main-title-font: 'Clash Display', sans-serif;
+        --secondary-title-font: 'Clash Grotesk', sans-serif;
+
+        --body-font: 'Mulish', sans-serif;
+
+        /* weights */
+        --thin: 100;
+        --extra-light: 200;
+        --light: 300;
+        --normal: 400;
+        --medium: 500;
+        --semi-bold: 600;
+        --bold: 700;
+        --extra-bold: 800;
+        --black: 900;
+
+        /* line-heights */
+        --normal-height: 100%;
+        --height-1: 110%;
+        --height-2: 130%;
+        --height-3: 155%;
+        --height-4: 160%;
+
+        /* letter-spacings */
+        --no-space: 0em;
+        --space-1: 0.01em;
+        --space-2: 0.02em;
+        --space-3: 0.03em;
+        --space-4: 0.04em;
+        --space-5: 0.05em;
+        --space-6: 0.06em;
+        --space-7: 0.07em;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+
+    font-family: var(--body-font);
+    color: var(--black500);
+}
+
+body{
+    display: block;
+
+    height: auto;
+}
+
+h1,h2,h3,h4
+{
+    font-family: var(--main-title-font);
+}
+
+h5,h6{
+    font-family: var(--secondary-title-font);
+}
+
+h3{
+    font-size: var(--title-3-widescreen-font-size);
+}
+
+p,span{
+    font-family: var(--body-font);
+
+    line-height: var(--height-4);
+    letter-spacing: var(--space-2);
+}
+
+button,li,a{
+    font-size: var(--body-normal-widescreen-font-size);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+span{
+    display: inline-block;
+}
+
+i{
+    display: inline-block;
+}
+
+.flexed
+{
+    display: flex;
+    align-items: center;
+}
+
+.columned
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    border-radius: 3rem;
+    padding: 0.625rem 1.5625rem;
+
+    font-weight: var(--bold);
+    text-transform: uppercase;
+}
+.btn.primary-btn
+{
+    background-color: var(--mint);
+    color: var(--green-leaf);
+
+    font-size: var(--caption-2-widescreen-font-size);
+    letter-spacing: var(--space-7);
+
+}
+
+.btn.primary-btn i{
+    color: var(--green-leaf);
+
+    font-size: 1.5rem;
+    margin-left: 0.3125rem;
+}
+
+.btn.secondary-btn{
+    background-color: transparent;
+    color: var(--mint);
+
+    border-radius: 6.25rem;
+    border: 2px solid var(--mint);
+
+    padding: 0.625rem 1.5625rem;
+}
+
+.btn.secondary-btn a {
+    color: var(--mint);
+}
+
+.btn.secondary-btn i{
+    color: var(--mint);
+}
+
+.bold
+{
+    font-weight: var(--black);
+}
+
+/* general styles for reused components */
+.ribbon{
+    width: 100%;
+    height: 6vh;
+
+    padding: 0.9375rem 6.25rem;
+
+    background-color: var(--mint);
+
+    justify-content: space-between;
+
+    font-size: var(--caption-2-widescreen-font-size);
+    font-weight: var(--bold);
+
+    color: var(--green-leaf);
+}
+
+
+.ribbon ul li
+{
+    margin: 0px 0.75rem;
+}
+
+.ribbon p, .ribbon ul li a i{
+    color: var(--green-leaf);
+}
+
+/* about crediting site touristique image */
+#site-touristique-credits.top-right{
+    top: 2.5rem;
+    right: 6.25rem;
+
+    align-items: flex-end;
+}
+
+#site-touristique-credits.top-left {
+    top: 2.5rem;
+    left: 6.25rem;
+
+    align-items: flex-start;
+}
+
+.eureka-article-tags
+{
+    padding: 0.1875rem 0.625rem;
+
+    color: var(--gray800);
+
+    border: 0.09375rem solid var(--gray800);
+
+    border-radius: 1.35rem;
+}
+
+#main
+{
+    gap: 9.375rem;
+    margin: 9.375rem 0rem;
+}
