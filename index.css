@@ -870,10 +870,24 @@ h2{
     font-weight: var(--medium);
 
     margin: .5rem 0rem .625rem;
+
+    text-align: center;
+}
+
+.carousel-part-body p:nth-of-type(2)
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .carousel-part-body small{
     font-size: var(--footnote-widescreen-font-size);
+
+    color: var(--gray600)
 }
 
 .carousel-part-body ul
@@ -937,8 +951,15 @@ h2{
 {
     display: grid;
     grid-template-rows: repeat(2,auto);
+    grid-gap: 2rem;
 
     /* border: 2px solid white; */
+
+}
+
+.contact-us-external-item a
+{
+    color: var(--white500);
 }
 
 #contact-social-media h4
