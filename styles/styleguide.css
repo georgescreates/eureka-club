@@ -200,14 +200,11 @@ i{
     border-radius: 6.25rem;
     border: 2px solid var(--mint);
 
-    padding: 0.625rem 1.5625rem;
+    padding: 0.9375rem 1.5625rem;
 }
 
-.btn.secondary-btn a {
-    color: var(--mint);
-}
-
-.btn.secondary-btn i{
+.btn.secondary-btn a,
+.btn.secondary-btn i {
     color: var(--mint);
 }
 
