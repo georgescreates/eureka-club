@@ -7,9 +7,11 @@
 
     <!-- adding stylesheets -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-    <link rel="stylesheet" href="styles/styleguide.css">
-    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="./styles/styleguide.css">
+    <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./styles/index-media-queries.css">
+    <link rel="stylesheet" href="./styles/general-media-queries.css">
 
     <title>EURÊKA CLUB - Bienvenue</title>
 </head>
@@ -33,7 +35,9 @@
         </div>
         <!-- header ribbon ends here -->
 
+        <!-- nav and hero section starts here -->
         <section id="nav-and-hero-section">
+            <!-- nav starts here -->
             <nav class="header-nav columned">
                 <div id="logo-container" class="mask">
                     <h1>EURÊKA CLUB</h1>
@@ -45,8 +49,11 @@
                     <li class="mask"><a href="">à propos</a></li>
                     <li class="mask"><a href="">contacts</a></li>
                 </ul>
+                <button class="btn" id="menu-btn"><i class="uil uil-bars"></i></button>
             </nav>
+            <!-- nav ends here -->
 
+            <!-- hero starts here -->
             <div id="header-hero">
                 <div id="transparent-cover"></div>
                 <div class="information-box flexed" id="infobox-1">
@@ -68,7 +75,7 @@
                         <p class="site-touristique-info">C'est la plus grande forteresse du continent américain : à 900 mètres d'altitude, elle se trouve à 15 km au sud de Cap-Haïtien, au sein du Parc National Historique - Citadelle, Sans Souci, Ramiers classé au patrimoine mondial de l'UNESCO depuis 1982.</p>
                     </div>
                 </div>
-                <p id="site-touristique-credits" class="top-right columned">
+                <p id="site-touristique-credits" class="top-left columned">
                     <span id="credit-title">
                         Site touristique du mois :
                     </span>
@@ -80,6 +87,7 @@
                     </span>
                 </p>
             </div>
+            <!-- hero ends here -->
 
             <div id="selected-articles-box">
                 <div class="selected-article columned">
@@ -189,6 +197,7 @@
                 </div>
             </div>
         </section>
+        <!-- nav and hero section ends here -->
     </header>
     <!-- header ends here -->
 
@@ -585,12 +594,6 @@
                             <a class="btn secondary-btn" href="mailto:eureka@gmail.com">Nous Contacter par adresse mail <i
                                     class="uil uil-arrow-right"></i></a>
                         </li>
-                        <!-- <li class="contact-us-external-item">
-                            <a class="btn secondary-btn" href="">Remplir le formulaire d’adhÉsion <i class="uil uil-arrow-right"></i></a>
-                        </li>
-                        <li class="contact-us-external-item">
-                            <a class="btn secondary-btn" href="mailto:eureka@gmail.com">Nous Contacter par adresse mail <i class="uil uil-arrow-right"></i></a>
-                        </li> -->
                     </ul>
                     <div id="contact-social-media">
                         <h4>Retrouvez-nous sur nos réseaux sociaux</h4>
@@ -679,6 +682,6 @@
     <!-- footer ends here -->
     <!-- calling scripts -->
     <script src="index.js"></script>
-    <script src="scripts/app.js"></script>
+    <script src="./scripts/app.js"></script>
 </body>
 </html>
