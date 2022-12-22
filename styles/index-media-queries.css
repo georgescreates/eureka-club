@@ -1,0 +1,198 @@
+@media only screen and (max-width: 500px) {
+    #header-hero{
+        padding: 1rem 1.875rem;
+
+        background-image: url(../images/sites-touristiques/site-touristique-initial-mobile.png);
+    }
+
+    #site-touristique-credits{
+        left: 50%;
+
+        /* border: 2px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #site-touristique-credits span{
+        text-align: center;
+        width: 100%;
+    }
+
+    #infobox-2{
+        top: 17rem;
+    }
+
+    #infobox-1,#infobox-3{
+        display: none;
+    }
+
+    #selected-articles-box{
+        transform: translateY(-10%);
+
+        margin: 0rem 1.875rem;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0rem;
+        grid-row-gap: 4rem;
+    }
+
+    .selected-article:nth-last-of-type(2){
+        position: relative;
+    }
+
+    .selected-article:nth-last-of-type(2)::before,
+    .selected-article:nth-last-of-type(2)::after{
+        content: "";
+
+        position: absolute;
+        left: 0%;
+        
+        height: 0.09375rem;
+        width: 100%;
+        
+        background-color: var(--gray500);
+    }
+    
+    .selected-article:nth-last-of-type(2)::before{
+        toP: -12%;
+    }
+
+    .selected-article:nth-last-of-type(2)::after{
+        bottom: -12%;
+    }
+
+    #portraits-section{
+        padding: 0rem 1.875rem;
+    }
+
+    .portraits-grid:not(.portraits-grid:nth-of-type(2)){
+        display: none;
+    }
+
+    .portrait-element.active{
+        transform: translateX(10%);
+    }
+
+    .portrait-element:nth-of-type(2){
+        transform: translateX(50%);
+    }
+
+    .second-element{
+        transform: translateX(0%);
+    }
+
+    #portraits-presentation{
+        width: 90%;
+    }
+
+    #survey-section{
+        padding: 0rem 1.875rem;
+    }
+
+    .choices-row{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .form-footer{
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .form-footer p {
+        width: 100%;
+    }
+
+    #to-transition-section{
+        padding: 3.5rem 1.875rem;
+
+        flex-direction: column;
+    }
+
+    #about-section{
+        padding: 3.5rem 1.875rem;
+    }
+
+    .accordeon-row{
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .accordeon-title{
+        width: 100%;
+    }
+
+    .accordeon-data{
+        width: 100%;
+        height: 0px;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-row-gap: 1.2rem;
+    }
+
+    .accordeon-row.active .accordeon-data{
+        height: auto;
+    }
+
+    .accordeon-data-part{
+        margin-top: 2rem;
+    }
+
+    .accordeon-row.active .accordeon-data-part {
+        gap: .7rem;
+    }
+
+    .accordeon-data-part h3,
+    .accordeon-data-part p{
+        display: none;
+    }
+
+    .accordeon-row.active .accordeon-data-part h3,
+    .accordeon-row.active .accordeon-data-part p{
+        display: block;
+    }
+
+    #quote-section{
+        flex-direction: column;
+
+        padding: 0rem 3rem;
+    }
+
+    #staff-carousel-section{
+        padding: 0rem .875rem;
+    }
+
+    #carousel-container{
+        grid-template-columns: 1fr;
+        grid-column-gap: 0rem;
+        grid-row-gap: 1.875rem;
+    }
+
+    #contact-us-section{
+        padding: 0rem 1.875rem;
+
+        grid-template-columns: 1fr;
+    }
+
+    #contact-us-left-part{
+        height: auto;
+    }
+
+    #contact-us-external-link-container{
+        grid-template-columns: 1fr;
+        grid-gap: 2.5rem;
+    }
+
+    .contact-external{
+        grid-gap: 3rem;
+    }
+
+    .secondary-btn{
+        font-size: .868rem;
+    }
+}
