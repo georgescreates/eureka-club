@@ -1,0 +1,67 @@
+ @media only screen and (max-width: 500px) {
+    .ribbon{
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 5.1rem;
+        padding: 1rem 1.875rem;
+    }
+
+    .header-nav{
+        flex-direction: row;
+
+        padding: 1.3rem 1.875rem;
+    }
+
+    #logo-container{
+        margin-bottom: 0rem;
+    }
+
+    #logo-container h1 {
+        font-size: var(--title-2-medium-font-size);
+    }
+    
+    #menu-btn{
+        display: block;
+    }
+
+    #header-nav-ul{
+        display: none;
+    }
+
+    #main
+    {
+        gap: 9.375rem;
+        margin: 2rem 0rem;
+    }
+
+    footer{
+        padding: 3.125rem 1.875rem;
+        grid-template-columns: 1fr;
+        grid-gap: 2.875rem;
+    }
+
+    #footer-left{
+        align-items: center;
+    }
+
+    #footer-left p{
+        width: 85%;
+
+        text-align: center;
+    }
+
+    #footer-right{
+        grid-template-columns: 1fr;
+        grid-row-gap: 3rem;
+    }
+
+    .footer-right-part{
+        align-items: center;
+    }
+
+    .footer-right-part ul {
+        align-items: center;
+
+    }
+ }
