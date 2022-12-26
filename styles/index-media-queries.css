@@ -196,3 +196,157 @@
         font-size: .868rem;
     }
 }
+
+@media only screen and (max-width: 425px) {
+    h2{
+        font-size: var(--title-2-medium-font-size);
+    }
+    #selected-articles-box{
+        margin: 0rem 1rem;
+    }
+
+    .selected-article-publication-data span,
+    .article-tags-listing li a{
+        font-size: var(--footnote-medium-font-size);
+    }
+
+    #portraits-section {
+        padding: 0rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .btn{
+        padding: 0.625rem 1rem;
+    }
+    
+    .btn.primary-btn{
+        font-size: 13px;
+    }
+
+    .btn.primary-btn i{
+        font-size: 1.3rem;
+    }
+
+    .information-box{
+        width: 85%;
+    }
+
+    #site-touristique-credits.top-right,
+    #site-touristique-credits.top-left{
+        font-size: 14px;
+
+        transform: translateX(-50%);
+        left: 50%;
+
+        width: 100%;
+    }
+
+    .site-touristique-info{
+        width: 100%;
+    }
+
+    #selected-articles-box {
+        transform: translateY(-5%);
+    }
+
+    .selected-article-head-side
+    {
+        justify-content: center;
+    }
+
+    .selected-article-head{
+        grid-template-columns: 1fr;
+        grid-template-rows: 68% 32%;
+        grid-row-gap: 1rem;
+    }
+
+    .selected-article:nth-last-of-type(2)::before {
+        toP: -6%;
+    }
+
+    .selected-article:nth-last-of-type(2)::after {
+        bottom: -6%;
+    }
+
+    .portrait-picture{
+        height: 10rem;
+        width: 10rem;
+    }
+
+    #portraits-presentation p,
+    .form-footer p{
+        font-size: 1rem;
+    }
+
+    .choices-row{
+        gap: 0.875rem;
+    }
+
+    .survey-choice-label{
+        padding: .3125rem 0.875rem;
+
+        gap: 0.5rem;
+
+        font-size: 0.9375rem;
+    }
+
+    .label-divider{
+        display: none;
+    }
+
+    /* .form-footer{
+        border: 2px solid black;
+    } */
+
+    .about-photography{
+        width: 8rem;
+        height: 8rem;
+    }
+    
+
+    #staff-carousel-section{
+        align-items: center;
+    }
+
+    .carousel-controler{
+        display: none;
+    }
+
+    #contact-us-section{
+        /* border: 2px solid black; */
+        padding: 0rem 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    #contact-us-left-part{
+        width: 100%;
+
+        padding: 1.7rem;
+    }
+
+    #contact-us-form{
+        padding: 1.7rem;
+        gap: 2rem;
+    }
+
+    #contact-us-left-part p{
+        font-size: 14px;
+    }
+
+    .btn.secondary-btn {
+        padding: 0.9375rem;
+
+        font-size: 13px;
+    }
+
+    .contact-form-part:not(.contact-form-part:last-of-type){
+        height: 3.75rem;
+    }
+
+    .contact-form-part label,
+    .contact-form-part input,
+    .contact-form-part textarea{
+        font-size: 14px;
+    }
+}
